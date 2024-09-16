@@ -1,0 +1,44 @@
+syntax = "proto3";
+
+service DhtService 
+{
+    rpc PutFile(FileRequest) returns (FileResponse);
+    rpc GetFile(FileRequest) returns (FileResponse);
+    rpc LookupFile(FileRequest) returns (LocationResponse);
+    rpc JoinNetwork(JoinRequest) returns (Confirmation);
+    rpc LeaveNetwork(LeaveRequest) returns (Confirmation);
+}
+
+message FileRequest {
+    string filename = 1; //used on both types of request
+    string content = 2; //used for storing 
+}
+
+message FileResponse {
+    string message = 1; //success response
+    string content = 2; //file content
+}
+
+message LocationResponse
+{
+    //In what node is the file
+    int32 node_id = 1;
+    string filename = 2;
+}
+
+message JoinRequest 
+{
+    int32 node_id = 1;
+    string ip = 2;
+    int32 port = 3; 
+}
+
+message LeaveRequest
+{
+    int32 node_id = 1; //Node that will leave the network 
+}
+
+message Confirmation {
+    int32 node_id = 1; 
+    string message = 2; //succes message/failuremessage
+}
