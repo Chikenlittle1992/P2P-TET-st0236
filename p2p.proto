@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+service P2PNode {
+  rpc FindFile (FileRequest) returns (FileResponse);
+  rpc Join (JoinRequest) returns (JoinResponse);
+  rpc Leave (LeaveRequest) returns (LeaveResponse);
+}
+
+message FileRequest {
+  string filename = 1;
+}
+
+message FileResponse {
+  repeated string node_addresses = 1;
+}
+
+message JoinRequest {
+  string node_address = 1;
+}
+
+message JoinResponse {
+  bool success = 1;
+}
+
+message LeaveRequest {
+  string node_address = 1;
+}
+
+message LeaveResponse {
+  bool success = 1;
+}
