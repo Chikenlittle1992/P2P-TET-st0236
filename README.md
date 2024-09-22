@@ -1,14 +1,16 @@
-# info de la materia: STxxxx <nombre>
+# info de la materia: ST263 <Tópicos Especiales en Telemática>
 #
-# Estudiante(s): nombre, email-eafit
+# Estudiante(s): 
+# Miguel Angel Escudero Colonia, maescuderc@eafit.edu.co
+# Esneider Zapata Arias, ezapataa1@eafit.edu.co
 #
-# Profesor: nombre, email-eafit
+# Profesor: Juan Carlos Montoya Mendoza, jcmontoy@eafit.edu.co
 #
 # <para borrar: EL OBJETIVO DE ESTA DOCUMENTACÍON ES QUE CUALQUIER LECTOR CON EL REPO, EN ESPECIAL EL PROFESOR, ENTIENDA EL ALCANCE DE LO DESARROLLADO Y QUE PUEDA REPRODUCIR SIN EL ESTUDIANTE EL AMBIENTE DE DESARROLLO Y EJECUTAR Y USAR LA APLICACIÓN SIN PROBLEMAS>
 
 # <para borrar: renombre este archivo a README.md cuando lo vaya a usar en un caso específico>
 
-# nombre del proyecto, lab o actividad
+# Reto N1. Aplicaciones P2P
 #
 # 1. breve descripción de la actividad
 #
