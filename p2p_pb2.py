@@ -24,7 +24,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\tp2p.proto\"\x1f\n\x0b\x46ileRequest\x12\x10\n\x08\x66ilename\x18\x01 \x01(\t\"&\n\x0c\x46ileResponse\x12\x16\n\x0enode_addresses\x18\x01 \x03(\t\"#\n\x0bJoinRequest\x12\x14\n\x0cnode_address\x18\x01 \x01(\t\"\x1f\n\x0cJoinResponse\x12\x0f\n\x07success\x18\x01 \x01(\x08\"$\n\x0cLeaveRequest\x12\x14\n\x0cnode_address\x18\x01 \x01(\t\" \n\rLeaveResponse\x12\x0f\n\x07success\x18\x01 \x01(\x08\x32\x7f\n\x07P2PNode\x12\'\n\x08\x46indFile\x12\x0c.FileRequest\x1a\r.FileResponse\x12#\n\x04Join\x12\x0c.JoinRequest\x1a\r.JoinResponse\x12&\n\x05Leave\x12\r.LeaveRequest\x1a\x0e.LeaveResponseb\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\tp2p.proto\"\x1f\n\x0b\x46ileRequest\x12\x10\n\x08\x66ilename\x18\x01 \x01(\t\"&\n\x0c\x46ileResponse\x12\x16\n\x0enode_addresses\x18\x01 \x03(\t\"#\n\x0bJoinRequest\x12\x14\n\x0cnode_address\x18\x01 \x01(\t\"\x1f\n\x0cJoinResponse\x12\x0f\n\x07success\x18\x01 \x01(\x08\"$\n\x0cLeaveRequest\x12\x14\n\x0cnode_address\x18\x01 \x01(\t\" \n\rLeaveResponse\x12\x0f\n\x07success\x18\x01 \x01(\x08\"\x12\n\x10NeighborsRequest\"&\n\x11NeighborsResponse\x12\x11\n\tneighbors\x18\x01 \x03(\t2\xb6\x01\n\x07P2PNode\x12\'\n\x08\x46indFile\x12\x0c.FileRequest\x1a\r.FileResponse\x12#\n\x04Join\x12\x0c.JoinRequest\x1a\r.JoinResponse\x12&\n\x05Leave\x12\r.LeaveRequest\x1a\x0e.LeaveResponse\x12\x35\n\x0cGetNeighbors\x12\x11.NeighborsRequest\x1a\x12.NeighborsResponseb\x06proto3')
 
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
@@ -43,6 +43,10 @@ if not _descriptor._USE_C_DESCRIPTORS:
   _globals['_LEAVEREQUEST']._serialized_end=192
   _globals['_LEAVERESPONSE']._serialized_start=194
   _globals['_LEAVERESPONSE']._serialized_end=226
-  _globals['_P2PNODE']._serialized_start=228
-  _globals['_P2PNODE']._serialized_end=355
+  _globals['_NEIGHBORSREQUEST']._serialized_start=228
+  _globals['_NEIGHBORSREQUEST']._serialized_end=246
+  _globals['_NEIGHBORSRESPONSE']._serialized_start=248
+  _globals['_NEIGHBORSRESPONSE']._serialized_end=286
+  _globals['_P2PNODE']._serialized_start=289
+  _globals['_P2PNODE']._serialized_end=471
 # @@protoc_insertion_point(module_scope)

@@ -49,6 +49,11 @@ class P2PNodeStub(object):
                 request_serializer=p2p__pb2.LeaveRequest.SerializeToString,
                 response_deserializer=p2p__pb2.LeaveResponse.FromString,
                 _registered_method=True)
+        self.GetNeighbors = channel.unary_unary(
+                '/P2PNode/GetNeighbors',
+                request_serializer=p2p__pb2.NeighborsRequest.SerializeToString,
+                response_deserializer=p2p__pb2.NeighborsResponse.FromString,
+                _registered_method=True)
 
 
 class P2PNodeServicer(object):
@@ -72,6 +77,13 @@ class P2PNodeServicer(object):
         context.set_details('Method not implemented!')
         raise NotImplementedError('Method not implemented!')
 
+    def GetNeighbors(self, request, context):
+        """Nuevo método para obtener vecinos
+        """
+        context.set_code(grpc.StatusCode.UNIMPLEMENTED)
+        context.set_details('Method not implemented!')
+        raise NotImplementedError('Method not implemented!')
+
 
 def add_P2PNodeServicer_to_server(servicer, server):
     rpc_method_handlers = {
@@ -89,6 +101,11 @@ def add_P2PNodeServicer_to_server(servicer, server):
                     servicer.Leave,
                     request_deserializer=p2p__pb2.LeaveRequest.FromString,
                     response_serializer=p2p__pb2.LeaveResponse.SerializeToString,
+            ),
+            'GetNeighbors': grpc.unary_unary_rpc_method_handler(
+                    servicer.GetNeighbors,
+                    request_deserializer=p2p__pb2.NeighborsRequest.FromString,
+                    response_serializer=p2p__pb2.NeighborsResponse.SerializeToString,
             ),
     }
     generic_handler = grpc.method_handlers_generic_handler(
@@ -172,6 +189,33 @@ class P2PNode(object):
             '/P2PNode/Leave',
             p2p__pb2.LeaveRequest.SerializeToString,
             p2p__pb2.LeaveResponse.FromString,
+            options,
+            channel_credentials,
+            insecure,
+            call_credentials,
+            compression,
+            wait_for_ready,
+            timeout,
+            metadata,
+            _registered_method=True)
+
+    @staticmethod
+    def GetNeighbors(request,
+            target,
+            options=(),
+            channel_credentials=None,
+            call_credentials=None,
+            insecure=False,
+            compression=None,
+            wait_for_ready=None,
+            timeout=None,
+            metadata=None):
+        return grpc.experimental.unary_unary(
+            request,
+            target,
+            '/P2PNode/GetNeighbors',
+            p2p__pb2.NeighborsRequest.SerializeToString,
+            p2p__pb2.NeighborsResponse.FromString,
             options,
             channel_credentials,
             insecure,

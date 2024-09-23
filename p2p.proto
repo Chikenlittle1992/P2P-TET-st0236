@@ -4,6 +4,7 @@ service P2PNode {
   rpc FindFile (FileRequest) returns (FileResponse);
   rpc Join (JoinRequest) returns (JoinResponse);
   rpc Leave (LeaveRequest) returns (LeaveResponse);
+  rpc GetNeighbors (NeighborsRequest) returns (NeighborsResponse); // Nuevo método para obtener vecinos
 }
 
 message FileRequest {
@@ -28,4 +29,10 @@ message LeaveRequest {
 
 message LeaveResponse {
   bool success = 1;
+}
+
+message NeighborsRequest {}
+
+message NeighborsResponse {
+  repeated string neighbors = 1;  // Lista de vecinos
 }
