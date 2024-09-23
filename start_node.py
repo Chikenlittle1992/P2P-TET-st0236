@@ -66,7 +66,7 @@ if __name__ == "__main__":
         # Informar a los vecinos del nodo bootstrap sobre el nuevo nodo
         node.update_neighbors(bootstrap_node, [node_address])
     else:
-        print("Nodo inicial de la red, sin bootstrap.")
+        print("Nodo inicial de la red")
 
     # Iniciar el menú en un hilo separado para que el nodo siga corriendo
     menu_thread = threading.Thread(target=menu, args=(node_address, dht))
