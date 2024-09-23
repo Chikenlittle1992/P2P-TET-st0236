@@ -24,6 +24,7 @@ Se desarrolló una aplicación que permite la transferencia de archivos simulada
 ## 1.2. Que aspectos NO cumplió o desarrolló de la actividad propuesta por el profesor (requerimientos funcionales y no funcionales)
 
 - Conexión y desconexión correcta de nodos (Todos los nodos son vecinos de todos, no se maneja la desconexión)
+- El Proyecto solo fue desarrollado para ambiente local, por lo que no se subió nada a la nube
 
 # 2. información general de diseño de alto nivel, arquitectura, patrones, mejores prácticas utilizadas.
 
@@ -46,10 +47,14 @@ Se desarrolló una aplicación que permite la transferencia de archivos simulada
 10. Puede conectar más nodos, y probar las funcionalidades de subir archivos y buscarlos
 
 ## detalles del desarrollo.
+
 ## detalles técnicos
+
 ## descripción y como se configura los parámetros del proyecto (ej: ip, puertos, conexión a bases de datos, variables de ambiente, parámetros, etc)
+Los puertos de cada peer pueden configurarse directamente dentro de la aplicación.
 
 # 4. Descripción del ambiente de EJECUCIÓN (en producción) lenguaje de programación, librerias, paquetes, etc, con sus numeros de versiones.
+El Proyecto solo fue desarrollado para ambiente local, por lo que no se subió nada a la nube
 
 # IP o nombres de dominio en nube o en la máquina servidor.
 
@@ -60,6 +65,8 @@ Se desarrolló una aplicación que permite la transferencia de archivos simulada
 ## una mini guia de como un usuario utilizaría el software o la aplicación
 
 # 5. otra información que considere relevante para esta actividad.
+
+Video explicativo de la aplicación: 
 
 # referencias:
 <debemos siempre reconocer los créditos de partes del código que reutilizaremos, así como referencias a youtube, o referencias bibliográficas utilizadas para desarrollar el proyecto o la actividad>
