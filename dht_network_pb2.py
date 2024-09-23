@@ -24,25 +24,27 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x11\x64ht_network.proto\"0\n\x0b\x46ileRequest\x12\x10\n\x08\x66ilename\x18\x01 \x01(\t\x12\x0f\n\x07\x63ontent\x18\x02 \x01(\t\"0\n\x0c\x46ileResponse\x12\x0f\n\x07message\x18\x01 \x01(\t\x12\x0f\n\x07\x63ontent\x18\x02 \x01(\t\"5\n\x10LocationResponse\x12\x0f\n\x07node_id\x18\x01 \x01(\x05\x12\x10\n\x08\x66ilename\x18\x02 \x01(\t\"8\n\x0bJoinRequest\x12\x0f\n\x07node_id\x18\x01 \x01(\x05\x12\n\n\x02ip\x18\x02 \x01(\t\x12\x0c\n\x04port\x18\x03 \x01(\x05\"\x1f\n\x0cLeaveRequest\x12\x0f\n\x07node_id\x18\x01 \x01(\x05\"0\n\x0c\x43onfirmation\x12\x0f\n\x07node_id\x18\x01 \x01(\x05\x12\x0f\n\x07message\x18\x02 \x01(\t2\xe5\x01\n\nDhtService\x12&\n\x07PutFile\x12\x0c.FileRequest\x1a\r.FileResponse\x12&\n\x07GetFile\x12\x0c.FileRequest\x1a\r.FileResponse\x12-\n\nLookupFile\x12\x0c.FileRequest\x1a\x11.LocationResponse\x12*\n\x0bJoinNetwork\x12\x0c.JoinRequest\x1a\r.Confirmation\x12,\n\x0cLeaveNetwork\x12\r.LeaveRequest\x1a\r.Confirmationb\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x11\x64ht_network.proto\"1\n\x04Node\x12\n\n\x02ip\x18\x01 \x01(\t\x12\x0f\n\x07node_id\x18\x02 \x01(\x05\x12\x0c\n\x04port\x18\x03 \x01(\x05\"0\n\x0b\x46ileRequest\x12\x10\n\x08\x66ilename\x18\x01 \x01(\t\x12\x0f\n\x07\x63ontent\x18\x02 \x01(\t\"0\n\x0c\x46ileResponse\x12\x0f\n\x07message\x18\x01 \x01(\t\x12\x0f\n\x07\x63ontent\x18\x02 \x01(\t\"5\n\x10LocationResponse\x12\x0f\n\x07node_id\x18\x01 \x01(\x05\x12\x10\n\x08\x66ilename\x18\x02 \x01(\t\"8\n\x0bJoinRequest\x12\x0f\n\x07node_id\x18\x01 \x01(\x05\x12\n\n\x02ip\x18\x02 \x01(\t\x12\x0c\n\x04port\x18\x03 \x01(\x05\"\x1f\n\x0cLeaveRequest\x12\x0f\n\x07node_id\x18\x01 \x01(\x05\"0\n\x0c\x43onfirmation\x12\x0f\n\x07node_id\x18\x01 \x01(\x05\x12\x0f\n\x07message\x18\x02 \x01(\t2\x83\x02\n\nDhtService\x12&\n\x07PutFile\x12\x0c.FileRequest\x1a\r.FileResponse\x12&\n\x07GetFile\x12\x0c.FileRequest\x1a\r.FileResponse\x12-\n\nLookupFile\x12\x0c.FileRequest\x1a\x11.LocationResponse\x12*\n\x0bJoinNetwork\x12\x0c.JoinRequest\x1a\r.Confirmation\x12,\n\x0cLeaveNetwork\x12\r.LeaveRequest\x1a\r.Confirmation\x12\x1c\n\x0c\x46indSuccesor\x12\x05.Node\x1a\x05.Nodeb\x06proto3')
 
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
 _builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'dht_network_pb2', _globals)
 if not _descriptor._USE_C_DESCRIPTORS:
   DESCRIPTOR._loaded_options = None
-  _globals['_FILEREQUEST']._serialized_start=21
-  _globals['_FILEREQUEST']._serialized_end=69
-  _globals['_FILERESPONSE']._serialized_start=71
-  _globals['_FILERESPONSE']._serialized_end=119
-  _globals['_LOCATIONRESPONSE']._serialized_start=121
-  _globals['_LOCATIONRESPONSE']._serialized_end=174
-  _globals['_JOINREQUEST']._serialized_start=176
-  _globals['_JOINREQUEST']._serialized_end=232
-  _globals['_LEAVEREQUEST']._serialized_start=234
-  _globals['_LEAVEREQUEST']._serialized_end=265
-  _globals['_CONFIRMATION']._serialized_start=267
-  _globals['_CONFIRMATION']._serialized_end=315
-  _globals['_DHTSERVICE']._serialized_start=318
-  _globals['_DHTSERVICE']._serialized_end=547
+  _globals['_NODE']._serialized_start=21
+  _globals['_NODE']._serialized_end=70
+  _globals['_FILEREQUEST']._serialized_start=72
+  _globals['_FILEREQUEST']._serialized_end=120
+  _globals['_FILERESPONSE']._serialized_start=122
+  _globals['_FILERESPONSE']._serialized_end=170
+  _globals['_LOCATIONRESPONSE']._serialized_start=172
+  _globals['_LOCATIONRESPONSE']._serialized_end=225
+  _globals['_JOINREQUEST']._serialized_start=227
+  _globals['_JOINREQUEST']._serialized_end=283
+  _globals['_LEAVEREQUEST']._serialized_start=285
+  _globals['_LEAVEREQUEST']._serialized_end=316
+  _globals['_CONFIRMATION']._serialized_start=318
+  _globals['_CONFIRMATION']._serialized_end=366
+  _globals['_DHTSERVICE']._serialized_start=369
+  _globals['_DHTSERVICE']._serialized_end=628
 # @@protoc_insertion_point(module_scope)

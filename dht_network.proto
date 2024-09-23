@@ -7,6 +7,14 @@ service DhtService
     rpc LookupFile(FileRequest) returns (LocationResponse);
     rpc JoinNetwork(JoinRequest) returns (Confirmation);
     rpc LeaveNetwork(LeaveRequest) returns (Confirmation);
+    rpc FindSuccesor(Node) returns (Node);
+}
+
+message Node
+{
+    string ip = 1;
+    int32 node_id = 2;
+    int32 port = 3; 
 }
 
 message FileRequest {

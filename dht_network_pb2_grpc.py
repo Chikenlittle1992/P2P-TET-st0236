@@ -59,6 +59,11 @@ class DhtServiceStub(object):
                 request_serializer=dht__network__pb2.LeaveRequest.SerializeToString,
                 response_deserializer=dht__network__pb2.Confirmation.FromString,
                 _registered_method=True)
+        self.FindSuccesor = channel.unary_unary(
+                '/DhtService/FindSuccesor',
+                request_serializer=dht__network__pb2.Node.SerializeToString,
+                response_deserializer=dht__network__pb2.Node.FromString,
+                _registered_method=True)
 
 
 class DhtServiceServicer(object):
@@ -94,6 +99,12 @@ class DhtServiceServicer(object):
         context.set_details('Method not implemented!')
         raise NotImplementedError('Method not implemented!')
 
+    def FindSuccesor(self, request, context):
+        """Missing associated documentation comment in .proto file."""
+        context.set_code(grpc.StatusCode.UNIMPLEMENTED)
+        context.set_details('Method not implemented!')
+        raise NotImplementedError('Method not implemented!')
+
 
 def add_DhtServiceServicer_to_server(servicer, server):
     rpc_method_handlers = {
@@ -121,6 +132,11 @@ def add_DhtServiceServicer_to_server(servicer, server):
                     servicer.LeaveNetwork,
                     request_deserializer=dht__network__pb2.LeaveRequest.FromString,
                     response_serializer=dht__network__pb2.Confirmation.SerializeToString,
+            ),
+            'FindSuccesor': grpc.unary_unary_rpc_method_handler(
+                    servicer.FindSuccesor,
+                    request_deserializer=dht__network__pb2.Node.FromString,
+                    response_serializer=dht__network__pb2.Node.SerializeToString,
             ),
     }
     generic_handler = grpc.method_handlers_generic_handler(
@@ -258,6 +274,33 @@ class DhtService(object):
             '/DhtService/LeaveNetwork',
             dht__network__pb2.LeaveRequest.SerializeToString,
             dht__network__pb2.Confirmation.FromString,
+            options,
+            channel_credentials,
+            insecure,
+            call_credentials,
+            compression,
+            wait_for_ready,
+            timeout,
+            metadata,
+            _registered_method=True)
+
+    @staticmethod
+    def FindSuccesor(request,
+            target,
+            options=(),
+            channel_credentials=None,
+            call_credentials=None,
+            insecure=False,
+            compression=None,
+            wait_for_ready=None,
+            timeout=None,
+            metadata=None):
+        return grpc.experimental.unary_unary(
+            request,
+            target,
+            '/DhtService/FindSuccesor',
+            dht__network__pb2.Node.SerializeToString,
+            dht__network__pb2.Node.FromString,
             options,
             channel_credentials,
             insecure,
