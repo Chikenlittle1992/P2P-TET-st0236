@@ -9,8 +9,7 @@
 
 # Reto N1. Aplicaciones P2P
 #
-# 1. breve descripción de la actividad
-#
+# 1. Breve descripción de la actividad
 
 Se desarrolló una aplicación que permite la transferencia de archivos simulada con una arquitectura P2P estructurada haciendo uso de DHT
 
