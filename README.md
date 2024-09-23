@@ -6,16 +6,17 @@
 #
 # Profesor: Juan Carlos Montoya Mendoza, jcmontoy@eafit.edu.co
 #
-# <para borrar: EL OBJETIVO DE ESTA DOCUMENTACÍON ES QUE CUALQUIER LECTOR CON EL REPO, EN ESPECIAL EL PROFESOR, ENTIENDA EL ALCANCE DE LO DESARROLLADO Y QUE PUEDA REPRODUCIR SIN EL ESTUDIANTE EL AMBIENTE DE DESARROLLO Y EJECUTAR Y USAR LA APLICACIÓN SIN PROBLEMAS>
-
-# <para borrar: renombre este archivo a README.md cuando lo vaya a usar en un caso específico>
 
 # Reto N1. Aplicaciones P2P
 #
 # 1. breve descripción de la actividad
 #
-<texto descriptivo>
+
+Se desarrolló una aplicación que permite la transferencia de archivos simulada con una arquitectura P2P estructurada haciendo uso de DHT
+
 ## 1.1. Que aspectos cumplió o desarrolló de la actividad propuesta por el profesor (requerimientos funcionales y no funcionales)
+
+- Comunicación entre nodos usando gRPC
 
 ## 1.2. Que aspectos NO cumplió o desarrolló de la actividad propuesta por el profesor (requerimientos funcionales y no funcionales)
 
