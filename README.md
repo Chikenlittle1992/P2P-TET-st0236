@@ -35,7 +35,7 @@ Se desarrolló una aplicación que permite la transferencia de archivos simulada
 ## Como se compila y ejecuta.
 
 1. Clonar el repositorio: `git clone https://github.com/Chikenlittle1992/P2P-TET-st0236.git`
-2. Abrir una terminal y acceder a la carpeta donde se creó el repo
+2. Abrir una terminal y acceder a la carpeta donde se clonó el repo
 3. Pararse en la rama "test1" `git checkout test1`
 4. Instalar librerias necesarias `pip install -r requirements.txt`
 5. Para probar las funcionalidades, ejecute `py start_node.py`
