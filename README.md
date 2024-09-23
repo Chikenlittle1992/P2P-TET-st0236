@@ -66,7 +66,7 @@ El Proyecto solo fue desarrollado para ambiente local, por lo que no se subió n
 
 # 5. otra información que considere relevante para esta actividad.
 
-Video explicativo de la aplicación: 
+Video explicativo de la aplicación: https://youtu.be/c-W1R9MRewQ
 
 # referencias:
 <debemos siempre reconocer los créditos de partes del código que reutilizaremos, así como referencias a youtube, o referencias bibliográficas utilizadas para desarrollar el proyecto o la actividad>
