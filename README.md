@@ -19,7 +19,7 @@ Se desarrolló una aplicación que permite la transferencia de archivos simulada
 - Comunicación entre peers usando gRPC
 - "Subir" archivos a la red
 - Encontrar archivos en la red
-- Cada nodo tiene su Hash Table de archivos que peude ser consultada por los demás nodos
+- Cada nodo tiene su Hash Table de archivos que puede ser consultada por los demás nodos
 
 ## 1.2. Que aspectos NO cumplió o desarrolló de la actividad propuesta por el profesor (requerimientos funcionales y no funcionales)
 
@@ -29,8 +29,8 @@ Se desarrolló una aplicación que permite la transferencia de archivos simulada
 
 # 3. Descripción del ambiente de desarrollo y técnico: lenguaje de programación, librerias, paquetes, etc, con sus numeros de versiones.
 
-Lenguaje de Programación: Python 3.12
-Librerias: grpcio 1.66.1, grpcio-tools 1.66.1
+- Lenguaje de Programación: Python 3.12
+- Librerias: grpcio 1.66.1, grpcio-tools 1.66.1
 
 ## Como se compila y ejecuta.
 
